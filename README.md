@@ -1,4 +1,4 @@
-# toDoList 🌐
+# toDoList 📋
 
 ## 🚀 Tecnologias
 Esse repositório contém essas tais tecnologias :
