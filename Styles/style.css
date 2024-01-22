@@ -1,18 +1,15 @@
-/* Importação de fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
-/* Definição de variáveis de estilo */
 :root {
-    --fonte-primaria: 'Krona One', sans-serif;  /* Fonte principal para títulos */
-    --fonte-secundaria: 'Montserrat', sans-serif;  /* Fonte secundária para o corpo do texto */
-    --cor-primaria: #2b4c7e;  /* Azul principal */
-    --cor-secundaria: #1f1f20;  /* Preto azulado de fundo */
-    --cor-terciaria: #567ebb;  /* Azul acinzentado */
-    --cor-quintenaria: white;  /* Branco */
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --cor-primaria: #2b4c7e;
+    --cor-secundaria: #1f1f20;
+    --cor-terciaria: #567ebb;
+    --cor-quintenaria: white;
 }
 
-/* Reset de margens, preenchimentos e scroll suave para toda a página */
 * {
     margin: 0;
     padding: 0;
@@ -21,21 +18,21 @@
 }
 
 body {
-    background-color: var(--cor-secundaria);  /* Fundo principal */
-    font-family: var(--fonte-secundaria);  /* Fonte padrão para o corpo do texto */
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
     text-align: center;
-    margin-bottom: 3rem; /* Adiciona espaço para o footer */
+    margin-bottom: 3rem;
 }
 
 h1, h2 {
     margin-top: 2rem;
-    font-family: var(--fonte-primaria);  /* Aplica a fonte principal a títulos */
-    color: var(--cor-terciaria);  /* Cor dos títulos */
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
     font-size: 2rem;
 }
 
 .addtasks {
-    margin-top: 3.2rem;  /* Margem superior para a seção de adicionar tarefas */
+    margin-top: 3.2rem;
     text-align: center;
 }
 
@@ -43,68 +40,63 @@ h1, h2 {
     width: 10rem;
     height: 2rem;
     text-align: center;
-    border-radius: 0.5rem;  /* Borda arredondada para a entrada de texto */
+    border-radius: 0.5rem;
 }
 
 .addbutton, .concbutton {
     width: 7.5rem;
     height: 1.8rem;
-    border-radius: 1.5rem;  /* Borda arredondada para os botões */
-    background-color: var(--cor-primaria);  /* Cor de fundo dos botões */
-    color: var(--cor-quintenaria);  /* Cor do texto nos botões */
-    text-shadow: 1px 1px 1px black;  /* Sombra no texto dos botões */
-    margin-left: 0.5rem; /* Adiciona espaçamento à direita dos botões */
+    border-radius: 1.5rem;
+    background-color: var(--cor-primaria);
+    color: var(--cor-quintenaria);
+    text-shadow: 1px 1px 1px black;
+    margin-left: 0.5rem;
 }
 
 .table-container {
     text-align: center;
-    padding-top: 2rem;  /* Espaçamento superior para a tabela */
+    padding-top: 2rem;
     font-family: var(--fonte-secundaria);
-    color: whitesmoke;  /* Cor do texto dentro da tabela */
+    color: whitesmoke;
     font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Estilo para as bordas e linhas das tabelas */
 .table-container table {
-    border: 2px solid var(--cor-terciaria); /* Cor da borda da tabela */
-    border-collapse: collapse;  /* Remove espaçamento entre as células */
-    width: 80%;  /* Largura da tabela */
-    margin-top: 1rem;  /* Espaçamento superior */
-    margin-bottom: 1rem; /* Espaçamento inferior para distanciamento entre tarefas */
-    background-color: transparent;  /* Fundo transparente para que o body apareça */
+    border: 2px solid var(--cor-terciaria);
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
 }
 
-/* Estilo para as células das tabelas */
 .table-container table td {
-    padding: 1rem;  /* Preenchimento interno das células */
-    color: var(--cor-quintenaria);  /* Cor do texto dentro da tabela */
+    padding: 1rem;
+    color: var(--cor-quintenaria);
 }
 
-/* Estilo para as linhas ímpares nas tabelas */
 .table-container table tbody tr:nth-child(odd) {
-    background-color: #2a2a2a;  /* Cor de fundo para linhas ímpares */
+    background-color: #2a2a2a;
 }
 
-/* Estilo para as linhas pares nas tabelas */
 .table-container table tbody tr:nth-child(even) {
-    background-color: #1f1f1f;  /* Cor de fundo para linhas pares */
+    background-color: #1f1f1f;
 }
 
 .task tbody tr {
-    margin-bottom: 1rem;  /* Espaçamento inferior entre as tarefas */
-    color: var(--cor-quintenaria);  /* Cor do texto nas tarefas */
-    display: grid;  /* Sistema de grid para alinhar elementos */
-    grid-template-columns: 1fr auto auto; /* Define as colunas para nome, botão "Concluída" e botão "Limpar Tarefa" */
-    align-items: center;  /* Alinha elementos verticalmente */
+    margin-bottom: 1rem;
+    color: var(--cor-quintenaria);
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
 }
 
-/* Adicione outros estilos conforme necessário */
 .task {
-    color: var(--cor-quintenaria);  /* Cor do texto nas tarefas */
-    font-family: var(--fonte-secundaria);  /* Fonte das tarefas */
+    color: var(--cor-quintenaria);
+    font-family: var(--fonte-secundaria);
 }
 
 footer {
@@ -112,23 +104,22 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    color: var(--cor-quintenaria);  /* Cor do texto no rodapé */
-    font-family: var(--fonte-secundaria);  /* Fonte no rodapé */
-    margin-top: 2rem;  /* Espaçamento superior para o rodapé */
+    color: var(--cor-quintenaria);
+    font-family: var(--fonte-secundaria);
+    margin-top: 2rem;
 }
 
-/* Estilo do botão "Concluída" */
 .task .concbutton {
-    background-color: var(--cor-primaria);  /* Cor de fundo do botão "Concluída" */
-    color: var(--cor-quintenaria);  /* Cor do texto no botão "Concluída" */
+    background-color: var(--cor-primaria);
+    color: var(--cor-quintenaria);
     border: none;
     cursor: pointer;
 }
 
 .concludedtasks th {
-    color: var(--cor-terciaria);  /* Cor do texto nas tarefas concluídas */
-    font-family: var(--fonte-primaria);  /* Fonte das tarefas concluídas */
-    font-size: 1.5rem;  /* Tamanho do texto nas tarefas concluídas */
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
 }
 
 .addtasks {
@@ -136,10 +127,4 @@ footer {
     text-align: left;
 }
 
-/* Regras @media para tornar o layout responsivo */
-@media screen and (max-width: 600px) {
-    .textfield, .addbutton, .concbutton {
-        width: 100%;  /* Largura total para entrada de texto e botões */
-        margin-right: 0; /* Remove o espaçamento à direita dos botões em telas menores */
-    }
-}
+
